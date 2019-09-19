@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Leo-Shop</title>
+</head>
+<body>
+    <header>
+        <div class="header-upper">
+            <div class="container flex">
+
+                <div class="language-currency">
+                    <div class="language dropdown">
+                        Language: <button class="dropdown-btn">English<i class="fas fa-chevron-down"></i></button>
+                        <div class="dropdown-content language-pick">
+                            <a href="">French</a>
+                            <a href="">German</a>
+                            <a href="">Chinese</a>
+                            <a href="">Russian</a>
+                        </div> 
+                    </div>
+
+                    <div class="currency dropdown">
+                        Currency: <button class="dropdown-btn">USD<i class="fas fa-chevron-down"></i></button>
+                        <div class="dropdown-content current-pick">
+                            <a href="">EUR</a>
+                            <a href="">YEN</a>
+                            <a href="">RUB</a>
+                        </div> 
+                    </div>
+                </div>
+
+                <nav class="user-nav">
+                    <a href="#" class="user-nav__link">Account</a>
+                    <a href="#" class="user-nav__link">Wishlist</a>
+                    <a href="#" class="user-nav__link">Checkout</a>
+                    <a href="#" class="user-nav__link">Log In</a>
+                    <a href="#" class="user-nav__link">Sign Up</a>
+                </nav>
+
+            </div>
+        </div>
+        <div class="header-down">
+            <div class="container flex">
+                <div class="header-down-col-1">
+                    <h1 class="header-down-title">LEO SHOP</h1>
+                    <nav class="site-nav">
+                        <a href="">HOME</a>
+                        <a href="">WOMEN</a>
+                        <a href="">MEN</a>
+                        <a href="">OTHER</a>
+                        <a href="">PURCHASED</a>
+                    </nav>
+                </div>
+                <div class="header-down-col-2">
+                    <label>
+                        <input type="search" placeholder="Search..">
+                        <i class="fas fa-search"></i>
+                    </label>
+                    <!-- Кнопки покупок и ещё что-то -->
+                    <div class="btn-container">
+                        <button class="btn" type="button"><i class="fas fa-tags"></i></button>
+                        <button class="btn" type="button"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <strong class="cart-info">CART (<span>0</span>)</strong>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container flex">
+            <h1 class="hero-title">
+                <span>ALUMINUM CLUB</span><span><strong>Experience Ray-Ban</strong></span>
+            </h1>
+            <div class="hero-slider">
+                <button class="hero-slider__btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="hero-slider__btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+    <main class="main-grid container">
+
+        <section class="goods-section">
+            <h2 class="title">FEATURED PRODUCTS</h2>
+            <div class="grid goods">
+
+                <div class="goods__item new">
+                    <div class="sale-label label">SALE</div>
+                    <div class="new-label label">NEW</div>
+                    <div class="img-container">
+                        <img src="img/glasses/glasses-1.png" alt="Glasses for $388">
+                    </div>
+                    <div class="flex-goods">
+                        <div class="goods__item--info-container">
+                            Lorem ipsum, dolor sit
+                            <span class="price">$388.00</span>
+                        </div>
+                        <button class="btn"><i class="fas fa-cart-arrow-down"></i></button>
+                    </div>
+                </div>
+
+                <div class="goods__item">
+                    <div class="sale-label label">SALE</div>
+                    <div class="new-label label">NEW</div>
+                    <div class="img-container">
+                        <img src="img/glasses/glasses-2.png" alt="Glasses for $90">
+                    </div>
+                    <div class="flex-goods">
+                        <div class="goods__item--info-container">
+                            Lorem ipsum, dolor sit
+                            <span class="price">$90.00</span>
+                        </div>
+                        <button class="btn"><i class="fas fa-cart-arrow-down"></i></button>
+                    </div>
+                </div>
+
+                <div class="goods__item sale">
+                    <div class="sale-label label">SALE</div>
+                    <div class="new-label label">NEW</div>
+                    <div class="img-container">
+                        <img src="img/glasses/glasses-3.png" alt="Glasses for $300">
+                    </div>
+                    <div class="flex-goods">
+                        <div class="goods__item--info-container">
+                            Lorem ipsum, dolor sit
+                            <span class="price">
+                                <span class="price-old">$460</span>$300.00
+                            </span>
+                        </div>
+                        <button class="btn"><i class="fas fa-cart-arrow-down"></i></button>
+                    </div>
+                </div>
+
+                <div class="goods__item">
+                    <div class="sale-label label">SALE</div>
+                    <div class="new-label label">NEW</div>
+                    <div class="img-container">
+                        <img src="img/glasses/glasses-4.png" alt="Glasses for $180">
+                    </div>
+                    <div class="flex-goods">
+                        <div class="goods__item--info-container">
+                            Lorem ipsum, dolor sit
+                            <span class="price">$180.00</span>
+                        </div>
+                        <button class="btn"><i class="fas fa-cart-arrow-down"></i></button>
+                    </div>
+                </div>
+
+                <div class="goods__item new">
+                    <div class="sale-label label">SALE</div>
+                    <div class="new-label label">NEW</div>
+                    <div class="img-container">
+                        <img src="img/glasses/glasses-5.png" alt="Glasses for 278$">
+                    </div>
+                    <div class="flex-goods">
+                        <div class="goods__item--info-container">
+                            Lorem ipsum, dolor sit
+                            <span class="price">$278.00</span>
+                        </div>
+                        <button class="btn"><i class="fas fa-cart-arrow-down"></i></button>
+                    </div>
+                </div>
+
+                <div class="goods__item">
+                    <div class="sale-label label">SALE</div>
+                    <div class="new-label label">NEW</div>
+                    <div class="img-container">
+                        <img src="img/glasses/glasses-6.png" alt="Glasses for 378$">
+                    </div>
+                    <div class="flex-goods">
+                        <div class="goods__item--info-container">
+                            Lorem ipsum, dolor sit
+                            <span class="price">$378.00</span>
+                        </div>
+                        <button class="btn"><i class="fas fa-cart-arrow-down"></i></button>
+                    </div>
+                </div>
+
+                <div class="goods__item new">
+                    <div class="sale-label label">SALE</div>
+                    <div class="new-label label">NEW</div>
+                    <div class="img-container">
+                        <img src="img/glasses/glasses-7.png" alt="Glasses for 500$">
+                    </div>
+                    <div class="flex-goods">
+                        <div class="goods__item--info-container">
+                            Lorem ipsum, dolor sit
+                            <span class="price">$500.00</span>
+                        </div>
+                        <button class="btn"><i class="fas fa-cart-arrow-down"></i></button>
+                    </div>
+                </div>
+
+                <div class="goods__item sale">
+                    <div class="sale-label label">SALE</div>
+                    <div class="new-label label">NEW</div>
+                    <div class="img-container">
+                        <img src="img/glasses/glasses-8.png" alt="Glasses for 200$">
+                    </div>
+                    <div class="flex-goods">
+                        <div class="goods__item--info-container">
+                            Lorem ipsum, dolor sit
+                            <span class="price">
+                                <span class="price-old">$460</span>$200.00
+                            </span>
+                        </div>
+                        <button class="btn"><i class="fas fa-cart-arrow-down"></i></button>
+                    </div>
+                </div>
+
+                <div class="goods__item new">
+                    <div class="sale-label label">SALE</div>
+                    <div class="new-label label">NEW</div>
+                    <div class="img-container">
+                        <img src="img/glasses/glasses-9.png" alt="Glasses for 370$">
+                    </div>
+                    <div class="flex-goods">
+                        <div class="goods__item--info-container">
+                            Lorem ipsum, dolor sit
+                            <span class="price">$370.00</span>
+                        </div>
+                        <button class="btn"><i class="fas fa-cart-arrow-down"></i></button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <h2 class="title">STAFF PICK</h2>
+            <div class="grid goods__stuff">
+
+                <div class="goods__item new">
+                    <div class="sale-label label">SALE</div>
+                    <div class="new-label label">NEW</div>
+                    <div class="img-container">
+                        <img src="img/glasses/glasses-9.png" alt="Glasses for 370$">
+                    </div>
+                    <div class="flex-goods">
+                        <div class="goods__item--info-container">
+                            Lorem ipsum, dolor sit
+                            <span class="price">$370.00</span>
+                        </div>
+                        <button class="btn"><i class="fas fa-cart-arrow-down"></i></button>
+                    </div>
+                </div>
+
+                <div class="goods__item">
+                    <div class="sale-label label">SALE</div>
+                    <div class="new-label label">NEW</div>
+                    <div class="img-container">
+                        <img src="img/glasses/glasses-5.png" alt="Glasses for 278$">
+                    </div>
+                    <div class="flex-goods">
+                        <div class="goods__item--info-container">
+                            Lorem ipsum, dolor sit
+                            <span class="price">$278.00</span>
+                        </div>
+                        <button class="btn"><i class="fas fa-cart-arrow-down"></i></button>
+                    </div>
+                </div>
+
+                <div class="goods__item new">
+                    <div class="sale-label label">SALE</div>
+                    <div class="new-label label">NEW</div>
+                    <div class="img-container">
+                        <img src="img/glasses/glasses-3.png" alt="Glasses for 188$">
+                    </div>
+                    <div class="flex-goods">
+                        <div class="goods__item--info-container">
+                            Lorem ipsum, dolor sit
+                            <span class="price">$188.00</span>
+                        </div>
+                        <button class="btn"><i class="fas fa-cart-arrow-down"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <h2 class="title">NEW PRODUCTS</h2>
+            <div class="grid goods__new">
+
+                <div class="goods__item new">
+                    <div class="sale-label label">SALE</div>
+                    <div class="new-label label">NEW</div>
+                    <div class="img-container">
+                        <img src="img/glasses/glasses-6.png" alt="Glasses for $90">
+                    </div>
+                    <div class="flex-goods">
+                        <div class="goods__item--info-container">
+                            Lorem ipsum, dolor sit
+                            <span class="price">$90.00</span>
+                        </div>
+                        <button class="btn"><i class="fas fa-cart-arrow-down"></i></button>
+                    </div>
+                </div>
+
+                <div class="goods__item new">
+                    <div class="sale-label label">SALE</div>
+                    <div class="new-label label">NEW</div>
+                    <div class="img-container">
+                        <img src="img/glasses/glasses-3.png" alt="Glasses for $60">
+                    </div>
+                    <div class="flex-goods">
+                        <div class="goods__item--info-container">
+                            Lorem ipsum, dolor sit
+                            <span class="price">$60.00</span>
+                        </div>
+                        <button class="btn"><i class="fas fa-cart-arrow-down"></i></button>
+                    </div>
+                </div>
+
+                <div class="goods__item new">
+                    <div class="sale-label label">SALE</div>
+                    <div class="new-label label">NEW</div>
+                    <div class="img-container">
+                        <img src="img/glasses/glasses-4.png" alt="Glasses for $378">
+                    </div>
+                    <div class="flex-goods">
+                        <div class="goods__item--info-container">
+                            Lorem ipsum, dolor sit
+                            <span class="price">$378.00</span>
+                        </div>
+                        <button class="btn"><i class="fas fa-cart-arrow-down"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="aside">
+            <div class="adv aside-block">
+                <div class="adv-row-1">
+                    <h2 class="title">FEATURED<br>GLASS</h2>
+                    <div class="adv__img-container">
+                        <a href="#" class="a-btn btn-long">Check It Out</a>
+                    </div>
+                </div>
+                <div class="points adv-row-2">
+                    <div class="point active"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+                </div>
+            </div>
+        
+            <form action="" class="sign-up-form aside-block">
+                <h2 class="title">NEWSLETTER<br>SIGNUP</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <input type="email">
+                <button type="submit" class="btn-long btn-submit">Subscribe</button>
+            </form>
+        </aside>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-info">
+            <div class="container flex">
+                <div class="shipping-container">
+                    <div class="icon"><i class="fas fa-truck"></i></div>
+                    Free shipping on orders over $100
+                </div>
+                <div class="call-container">
+                    <div class="icon"><i class="fas fa-phone"></i></div>
+                    Call us! TOLL free - <a href="tel:409-8888-0099" class="tel-number">409-8888-0099</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-social">
+            <div class="container">
+                <div class="facebook-section">
+                    <h3>FACEBOOK</h3>
+                </div>
+                <div class="twitter-section">
+                    <h3>FROM TWITTER</h3>
+                    <div class="twitter-container">
+                        <div class="twitter-row">
+                            <div class="icon">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <p class="twitter-container__text">Lorem Ipsum is simply dummy text of the printing and <span>typesetting
+                                    industry.</span> <span>Lorem Ipsum</span> has been the industry's standard
+                                dummy text ever since the</p>
+                        </div>
+                        <div class="twitter-row">
+                            <div class="icon">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <p class="twitter-container__text">Lorem Ipsum is simply dummy text of the printing and <span>typesetting industry.</span>
+                                <span>Lorem Ipsum</span> has been the industry's standard
+                                dummy text ever since the</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="information">
+                    <h3>INFORMATION</h3>
+                    <ul class="information-list">
+                        <li>Sed ultrices purus non.</li>
+                        <li>sodales sodales.</li>
+                        <li>Curabitur pretium dui vitae.</li>
+                        <li>Donec gravida mi in nisl</li>
+                        <li>faucibus leo condimentum.</li>
+                        <li>Donec et lorem suscipit.</li>
+                    </ul>
+                </div>
+                <div class="contact-us">
+                    <h3>CONTACT US</h3>
+                    <address>
+                        <ul class="address-links">
+                            <li>Leo Store</li>
+                            <li>Leopards Media</li>
+                            <li>KVM Rpad, 4590GH</li>
+                            <li>+1 489-8888-0099</li>
+                            <li>mail@email.com</li>
+                        </ul>
+                    </address>
+                    <div class="media">
+                        <div class="media__item">
+                            <a href=""><i class="fab fa-google-plus-g"></i></a>
+                        </div>
+                        <div class="media__item">
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="media__item">
+                            <a href=""><i class="fas fa-wifi"></i></a>
+                        </div>
+                        <div class="media__item">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div>© Copyright 2013 Css Author, All Rights Reserved.</div>
+                <ul class="mememe">
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Delivery & Returns</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/app.js" defer></script>
+</body>
+</html>

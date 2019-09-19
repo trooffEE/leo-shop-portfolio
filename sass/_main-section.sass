@@ -1,0 +1,143 @@
+main
+    margin-bottom: 75px
+// MAIN
+.hero
+    height: 600px
+    width: 100%
+    background-image: url(../img/hero.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    color: white
+    position: relative
+    &-title
+        font-weight: lighter
+        text-transform: uppercase
+        font-size: 2rem
+        margin-left: 70px
+        span
+            display: block
+            background-color: rgba(0, 0, 0, 0.5)
+            padding: 10px 14px
+        span:not(:last-child)
+            width: 285px
+            margin-bottom: 4px
+
+    // SLIDERS
+    &-slider
+        position: absolute
+        width: 100%
+        top: 50%
+        transform: translateY(-50%)
+        left: 0
+        display: flex
+        justify-content: space-between
+        padding: 0 6%
+        //button
+        &__btn:nth-child(2)
+            right: 0
+            
+
+// GRID LAYOUT --- DESKTOP
+.main-grid
+    display: grid
+    grid-template-columns: repeat(6, 1fr) 240px
+    grid-template-areas: "goods goods goods goods goods goods aside"
+    position: relative
+
+.grid  
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(150px, 230px))
+    grid-template-rows: repeat(auto-fit, minmax(208px, 320px))
+    grid-gap: 28px
+
+// GOODS SECTION
+.goods
+    &-section
+        grid-area: goods
+    // EACH GOODS ITSELF
+    &__item
+        box-shadow: 0px 0px 13px -10px rgba(0,0,0,0.75)
+        padding: 8px
+        overflow: hidden
+        .img-container
+            background-color: white
+            width: 217px
+            height: 219px
+            display: flex
+            justify-content: center
+            align-items: center
+            box-shadow: 0px 0px 12px -10px rgba(0,0,0,0.75)
+        &--info-container
+            max-width: 160px
+            overflow: hidden
+            margin-top: 15px
+            font-size: 1rem
+        .btn
+            margin-top: 10px
+            margin-left: 5px
+        .price
+            color: $btn-color
+        .price-old
+            display: inline-block
+            color: black
+            position: relative
+        .price-old::after
+            content: ""
+            position: absolute
+            left: 0
+            top: 50%
+            transform: translateY(-50%)
+            width: 100%
+            height: 1px
+            background-color: black
+        // FOR FLEX STYLING INSIDE OF GOOD'S ITEM
+        .flex-goods
+            display: flex
+            .goods__item--info-container
+                flex-shrink: 1
+            .btn
+                flex-shrink: 0
+                float: right
+
+// LABELS DEFULT STATE
+.label
+    position: absolute
+    top: 0 
+    color: white
+    width: 120px
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 36px
+    z-index: 99
+
+// DEFAULT SPECIFIC CLASSES FOR LABELS 
+.sale-label
+    display: none;
+
+.new-label
+    display: none;
+
+// SHOWING LABEL'S STATES "NEW" OR "SALE"
+.sale
+    position: relative
+    .sale-label
+        right: 0
+        background-color: $btn-color
+        transform: rotate(45deg)
+        top: 10px
+        right: -30px
+
+.new
+    position: relative
+    .new-label
+        left: 0
+        background-color: $main-color
+        transform: rotate(-45deg)
+        top: 10px
+        left: -30px
+
+@media(max-width: 1300px)
+    .hero 
+        height: 500px
